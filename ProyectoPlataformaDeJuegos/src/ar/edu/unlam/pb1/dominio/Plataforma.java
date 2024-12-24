@@ -12,12 +12,6 @@ public class Plataforma {
 	}
 
 	public Usuario buscarUsuarioConCorreo(String correo) {
-		// TODO:Busca un usuario entre los usuarios de la plataforma que tenga el correo
-		// suministrado.
-		// Si encuentra un usuario con ese correo, lo devuelve. Si NO encuentra un
-		// usuario con ese correo, entonces devuelve null.
-
-		// ES MAS EFICIENTE USAR UN WHILE
 
 		int indice = 0;
 		Usuario usuarioDelCorreoIngresado = null;
@@ -31,24 +25,9 @@ public class Plataforma {
 		}
 
 		return usuarioDelCorreoIngresado;
-
-		/*
-		 * Usuario usuarioDelCorreoIngresado = null;
-		 * 
-		 * for (int i = 0; i < this.usuarios.length; i++) { if (this.usuarios[i] != null
-		 * && this.usuarios[i].getCorreo().equals(correo)) { usuarioDelCorreoIngresado =
-		 * this.usuarios[i]; } else { usuarioDelCorreoIngresado = null; } }
-		 * 
-		 * return usuarioDelCorreoIngresado;
-		 */
 	}
 
 	public Usuario iniciarSesion(String correo, String contrasenia) {
-		// TODO: Obtiene un usuario buscandolo por su correo.
-		// Si existe, verifica que la contrasenia sea correcta. Si asi es, devuelve el
-		// usuario.
-		// Si ningun usuario tiene ese correo o la contrasenia no coincide, debe
-		// devolver null
 
 		Usuario usuarioIngresado = null;
 
@@ -68,8 +47,6 @@ public class Plataforma {
 	}
 
 	public boolean esValidoEl(String correo) {
-		// TODO: Validar el correo. Para que el correo sea valido, tiene que tener un
-		// caracter arroba ('@') y terminar en ".com"
 
 		boolean validado = false;
 
@@ -83,8 +60,6 @@ public class Plataforma {
 	}
 
 	public boolean registrarUsuario(Usuario usuario) {
-		// TODO: Agregar un usuario a la plataforma.
-		// En caso de exito, devuelve verdadero.
 
 		int indice = 0;
 		boolean seRegistro = false;
@@ -103,10 +78,6 @@ public class Plataforma {
 	}
 
 	public Juego obtenerJuegoPorSuId(int id) {
-		// TODO: Busca entre los juegos de la plataforma si alguno tiene el id
-		// suministrado.
-		// Si hay un juego con ese id, se devuelve el juego, caso contrario, se devuelve
-		// null
 
 		Juego juegoEncontrado = null;
 		int posicion = 0;

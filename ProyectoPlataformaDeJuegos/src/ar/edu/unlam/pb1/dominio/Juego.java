@@ -1,8 +1,6 @@
 package ar.edu.unlam.pb1.dominio;
 
 public class Juego {
-	// TODO: Completar la clase con lo necesario para garantizar el correcto
-	// funcionamiento
 
 	private int id;
 	private String nombre;
@@ -17,7 +15,6 @@ public class Juego {
 
 	}
 
-	// ______________S&G_________________________
 
 	public void setCantidadDeHorasJugadas(double horas) {
 
